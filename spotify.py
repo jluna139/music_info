@@ -19,7 +19,7 @@ st.subheader("Your result")
 st.subheader("")
 st.sidebar.header("Type your song here")
 
-song_selected = st.sidebar.text_input(label="", value="hello")
+song_selected = st.text_input(label="", value="hello")
 
 str = spotify.search(song_selected)
 song_dic0 = dict(str)["tracks"]["items"]
