@@ -17,7 +17,7 @@ st.title("Spotipy")
 st.write("This app lets you find the features of a specific song")
 st.subheader("Your result")
 st.subheader("")
-st.sidebar.header("Type your song here")
+
 
 song_selected = st.text_input(label="", value="hello")
 
