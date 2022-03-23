@@ -15,11 +15,9 @@ spotify = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(cl
 
 st.title("Spotipy")
 st.write("This app lets you find the features of a specific song")
-st.subheader("Your result")
-
-
 
 song_selected = st.text_input(label="", value="hello")
+st.subheader("Your result")
 
 str = spotify.search(song_selected)
 song_dic0 = dict(str)["tracks"]["items"]
